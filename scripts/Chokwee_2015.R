@@ -15,7 +15,7 @@ matrix.please<-function(M) {
 M <- matrix.please(Chokwee_2015)
 
 colfunc <- colorRampPalette(c("green", "red"))
-pdf("Chokwee_2015_OTUs.pdf")
+pdf("outpu/Chokwee_2015_OTUs.pdf")
 heatmap.2(M,col=colfunc(15), main = "Chokwee 2015 OTUs",dendrogram = "none", srtCol=360,  adjCol = c(0.5,0.5), scale="column", trace="none", key = F, denscol="black", cexRow=0.5, cexCol =0.8, margins = c(8,16))
 heatmap.2(M,col=colfunc(15), dendrogram = "none", srtCol=360,  adjCol = c(0.5,0.5), scale="column", trace="none", density.info="density",denscol="black", cexRow=0.5, cexCol =0.8, margins = c(8,16))
 heatmap.2(M, main = "Chokwee 2015 OTUs", col=bluered, dendrogram = "none", srtCol=360,  adjCol = c(0.5,0.5), scale="column", trace="none", key = F, denscol="black", cexRow=0.5, cexCol =0.8, margins = c(8,16))
